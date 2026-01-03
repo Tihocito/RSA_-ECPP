@@ -1,0 +1,9 @@
+\section{RSA with Provable Primes}
+
+Prime numbers are first generated using Miller--Rabin for efficiency.
+Each candidate prime is then verified using ECPP to obtain a primality
+certificate.
+
+The RSA modulus $n = pq$ is constructed using these verified primes.
+The certificates can be stored alongside the private key and used for
+independent verification.

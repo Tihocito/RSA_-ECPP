@@ -1,0 +1,13 @@
+\section{Introduction}
+
+Public-key cryptography relies heavily on the hardness of integer
+factorization. RSA remains one of the most widely deployed cryptosystems.
+A critical requirement of RSA is the generation of large prime numbers.
+
+In practice, probabilistic primality tests such as Miller--Rabin are commonly
+used. While efficient, these tests only provide probabilistic guarantees.
+Elliptic Curve Primality Proving (ECPP) offers a deterministic alternative by
+producing a certificate that can be independently verified.
+
+This work implements an RSA cryptosystem whose prime factors are verified using
+ECPP, thereby providing provable security guarantees.

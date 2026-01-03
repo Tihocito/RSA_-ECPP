@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{RSA with Provable Primes Using Elliptic Curve Primality Proving}
+\author{Mạnh Bùi}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This work presents a cryptographic system that integrates the Elliptic Curve
+Primality Proving (ECPP) algorithm into RSA key generation in order to obtain
+provable prime factors. Unlike probabilistic primality tests such as
+Miller--Rabin, ECPP produces a mathematical certificate of primality, increasing
+trust in high-security cryptographic applications.
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/background}
+\input{sections/ecpp}
+\input{sections/system_design}
+\input{sections/rsa}
+\input{sections/experiments}
+\input{sections/conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

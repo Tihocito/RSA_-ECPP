@@ -1,0 +1,13 @@
+\section{Elliptic Curve Primality Proving}
+
+ECPP is a deterministic algorithm that proves the primality of an integer by
+constructing elliptic curves over finite fields and verifying group order
+properties.
+
+Given an integer $n$, ECPP attempts to find an elliptic curve $E/\mathbb{Z}_n$
+such that the order of the group $E(\mathbb{Z}_n)$ satisfies certain
+factorization properties. If these properties hold and a large prime factor is
+recursively proven prime, then $n$ is prime.
+
+Unlike probabilistic tests, ECPP produces a certificate that can be independently
+verified.
